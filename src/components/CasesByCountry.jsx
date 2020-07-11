@@ -7,7 +7,7 @@ import SingaporeCases from "./SingaporeCases";
 
 class CasesByCountry extends Component {
   componentDidMount() {
-    this.props.onGetCases();
+    this.props.onGetCases(); // Untuk get data cases dari casesAction. Pada action tersebut memanggil API
   }
   render() {
     const totalCasesByCountry = this.props.cases.casesData.Countries;
@@ -15,12 +15,15 @@ class CasesByCountry extends Component {
       <div className="container mt-4">
         <div className="row">
           <div className="col-sm-4 mb-4">
+            {/* Melakukan extracting dan composing component */}
             <IndonesiaCases propsIndonesiaCases={totalCasesByCountry} />
           </div>
           <div className="col-sm-4 mb-4">
+            {/* Melakukan extracting dan composing component */}
             <MalaysiaCases propsMalaysiaCases={totalCasesByCountry} />
           </div>
           <div className="col-sm-4 mb-4">
+            {/* Melakukan extracting dan composing component */}
             <SingaporeCases propsSingaporeCases={totalCasesByCountry} />
           </div>
         </div>

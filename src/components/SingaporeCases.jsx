@@ -11,6 +11,7 @@ function SingaporeCases({ propsSingaporeCases }) {
       >
         <div className="card-body">
           <div className="card-country">Singapore</div>
+          {/* Keluar modal setelah klik card Singapore */}
           <div className="modal fade" id="singapore-cases" aria-hidden="true">
             <div className="modal-dialog modal-xl">
               <div className="modal-content custom--bg">
@@ -32,6 +33,7 @@ function SingaporeCases({ propsSingaporeCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case confirmed">
+                            {/* Menampilkan Data Total Confirmed Singapore dari API */}
                             {propsSingaporeCases
                               ? propsSingaporeCases[150].TotalConfirmed
                               : null}
@@ -44,6 +46,7 @@ function SingaporeCases({ propsSingaporeCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case recovered">
+                            {/* Menampilkan Data Total Recovered Singapore dari API */}
                             {propsSingaporeCases
                               ? propsSingaporeCases[150].TotalRecovered
                               : null}
@@ -56,6 +59,7 @@ function SingaporeCases({ propsSingaporeCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case deaths">
+                            {/* Menampilkan Data Total Deaths Singapore dari API */}
                             {propsSingaporeCases
                               ? propsSingaporeCases[150].TotalDeaths
                               : null}

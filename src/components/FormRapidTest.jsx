@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const FormRapidTest = () => {
+  // Handle state menggunakan useState react hooks. Disini saya menggunakan form controlled
   const [name, setName] = useState("");
   const [gender, setGender] = useState("");
   const [age, setAge] = useState(0);
@@ -86,6 +87,7 @@ const FormRapidTest = () => {
             Register
           </button>
 
+          {/* Keluar modal setelah klik button Register dan akan menampilkan value dari field yang kita isi */}
           <div className="modal fade" id="dataForm" aria-hidden="true">
             <div className="modal-dialog modal-md">
               <div className="modal-content custom--bg">

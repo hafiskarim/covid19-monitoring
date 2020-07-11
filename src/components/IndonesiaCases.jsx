@@ -11,6 +11,7 @@ function IndonesiaCases({ propsIndonesiaCases }) {
       >
         <div className="card-body">
           <div className="card-country">Indonesia</div>
+          {/* Keluar modal setelah klik card Indonesia */}
           <div className="modal fade" id="indonesia-cases" aria-hidden="true">
             <div className="modal-dialog modal-xl">
               <div className="modal-content custom--bg">
@@ -32,6 +33,7 @@ function IndonesiaCases({ propsIndonesiaCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case confirmed">
+                            {/* Menampilkan Data Total Confirmed Indonesia dari API */}
                             {propsIndonesiaCases
                               ? propsIndonesiaCases[77].TotalConfirmed
                               : null}
@@ -44,6 +46,7 @@ function IndonesiaCases({ propsIndonesiaCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case recovered">
+                            {/* Menampilkan Data Total Recovered Indonesia dari API */}
                             {propsIndonesiaCases
                               ? propsIndonesiaCases[77].TotalRecovered
                               : null}
@@ -56,6 +59,7 @@ function IndonesiaCases({ propsIndonesiaCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case deaths">
+                            {/* Menampilkan Data Total Deaths Indonesia dari API */}
                             {propsIndonesiaCases
                               ? propsIndonesiaCases[77].TotalDeaths
                               : null}

@@ -11,6 +11,7 @@ function MalaysiaCases({ propsMalaysiaCases }) {
       >
         <div className="card-body">
           <div className="card-country">Malaysia</div>
+          {/* Keluar modal setelah klik card Malaysia */}
           <div className="modal fade" id="malaysia-cases" aria-hidden="true">
             <div className="modal-dialog modal-xl">
               <div className="modal-content custom--bg">
@@ -32,6 +33,7 @@ function MalaysiaCases({ propsMalaysiaCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case confirmed">
+                            {/* Menampilkan Data Total Confirmed Malaysia dari API */}
                             {propsMalaysiaCases
                               ? propsMalaysiaCases[103].TotalConfirmed
                               : null}
@@ -44,6 +46,7 @@ function MalaysiaCases({ propsMalaysiaCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case recovered">
+                            {/* Menampilkan Data Total Recovered Malaysia dari API */}
                             {propsMalaysiaCases
                               ? propsMalaysiaCases[103].TotalRecovered
                               : null}
@@ -56,6 +59,7 @@ function MalaysiaCases({ propsMalaysiaCases }) {
                       <div className="card custom--bg">
                         <div className="card-body">
                           <div className="case deaths">
+                            {/* Menampilkan Data Total Deaths Malaysia dari API */}
                             {propsMalaysiaCases
                               ? propsMalaysiaCases[103].TotalDeaths
                               : null}
