@@ -20,6 +20,4 @@ npm build
 ```
 
 ### Reference API Covid-19
-```
 https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest
-```
